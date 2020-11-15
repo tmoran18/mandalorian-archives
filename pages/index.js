@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Button from '../components/Button';
+import Navbar from '../components/Navbar';
+import MobileNavbar from '../components/MobileNavbar';
 
 export default function Home() {
 	return (
@@ -8,8 +10,8 @@ export default function Home() {
 				<title>Create Next App</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-
-			<Button rounded>Button</Button>
+			<Navbar />
+			<MobileNavbar />
 		</div>
 	);
 }

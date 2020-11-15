@@ -10,7 +10,6 @@ const theme = {
 		black: 'rgb(0, 0, 0, 0.85)',
 		white: '#ffffff',
 	},
-	fonts: ['Oxygen', 'sans-serif', 'Roboto'],
 	fontSize: {
 		small: '1em',
 		medium: '2em',
@@ -24,10 +23,29 @@ const theme = {
 };
 
 const GlobalStyle = createGlobalStyle`
+html, body {
+	padding: 0;
+  margin: 0;
+  height:100%;
+}
   body {
   background: linear-gradient(45deg, rgb(0, 0, 0, 0.85) 63%, #fed46c 63%, #fed46c 75%, rgb(0, 0, 0, 0.85) 75%);
   background-repeat: no-repeat;
-  }
+	font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    color:white;
+    
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
 `;
 
 function MyApp({ Component, pageProps, router }) {
